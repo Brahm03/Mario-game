@@ -39,6 +39,7 @@ class _MainPageState extends State<MainPage> with TickerProviderStateMixin {
         animationController.stop();
         animationWallController.stop();
         showDialog(
+            barrierDismissible: false,
             context: context,
             builder: (context) => AlertDialog(
                   title: const Text('Game over'),
